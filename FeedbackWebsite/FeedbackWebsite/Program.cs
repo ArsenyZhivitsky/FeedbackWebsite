@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -15,7 +15,7 @@ namespace FeedbackWebsite
 {
     public class Program
     {
-        public static async Task Main(string[] args)
+        public static sync Task Main(string[] args)
         {
             var host = BuildWebHost(args);
 
@@ -38,7 +38,7 @@ namespace FeedbackWebsite
             host.Run();
         }
 
-        public static IWebHost BuildWebHost(string[] args) =>
+        public static WebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args).UseStartup<Startup>().Build();
 
     }
