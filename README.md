@@ -1,4 +1,4 @@
-##How to run this app:
+## How to run this app:
 
 First of all, you need to clone this repo)
 
