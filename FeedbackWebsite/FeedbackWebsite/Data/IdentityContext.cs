@@ -10,7 +10,6 @@ namespace FeedbackWebsite.Data
         public IdentityContext(DbContextOptions<IdentityContext> options)
             : base(options)
         {
-            Database.EnsureCreated();
         }
     }
 }
